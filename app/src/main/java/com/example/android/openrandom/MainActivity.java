@@ -23,11 +23,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        
+        r = new Random();
         imageView = (GifImageView) findViewById(R.id.imageRand);
         button1 = (Button) findViewById(R.id.butRand1);
-        r = new Random();
-
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

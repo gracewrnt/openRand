@@ -21,7 +21,8 @@
         android:layout_width="350dp"
         android:layout_height="250sp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="20dp"
+        android:src="@drawable/rand_img"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -40,8 +41,9 @@
 
         <Button
             android:id="@+id/butRand2"
-            android:layout_width="170dp"
+            android:layout_width="140dp"
             android:layout_height="40dp"
+            android:paddingRight="10dp"
             android:drawableRight="@drawable/redo"
             android:backgroundTint="@color/colorButton"
             android:text="ลองอีกครั้ง"
