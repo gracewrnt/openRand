@@ -13,10 +13,11 @@ public class MainActivity extends AppCompatActivity {
     ImageView imageView;
     Button button;
     Random r;
-    Integer[] images = {R.drawable.bachor, R.drawable.bucket, R.drawable.burin, R.drawable.chick, R.drawable.eight4, R.drawable.eimaim
+    int[] images = {R.drawable.bachor, R.drawable.bucket, R.drawable.burin, R.drawable.chick, R.drawable.eight4, R.drawable.eimaim
             , R.drawable.goin, R.drawable.mahalai, R.drawable.mrgrill, R.drawable.shabu2n, R.drawable.pela
             , R.drawable.steaktechno, R.drawable.thinkmilk, R.drawable.timber};
-    int pickedImage, lastPicked;
+    int pickedImage = 0;
+    int lastPicked = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
                 } while(pickedImage == lastPicked);
 
                 lastPicked = pickedImage;
-                imageView.setImageResource(images[r.nextInt(pickedImage)]);
+                imageView.setImageResource(images[pickedImage]);
             }
         });
 
