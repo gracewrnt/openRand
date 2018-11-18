@@ -16,6 +16,11 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="30dp"/>
 
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/rand_img" />
+
     <ImageView
         android:id="@+id/imageRand"
         android:layout_width="350dp"
@@ -23,15 +28,31 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
     <Button
-        android:id="@+id/butRand"
+        android:id="@+id/butRand1"
         android:layout_width="95dp"
         android:layout_height="40dp"
-        android:layout_gravity="center_horizontal"
         android:backgroundTint="@color/colorButton"
         android:text="สุ่มเลย !"
         android:textSize="16sp"
         android:textColor="@color/colortext"
         android:layout_marginTop="20dp" />
+
+        <Button
+            android:id="@+id/butRand2"
+            android:layout_width="95dp"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/colorButton"
+            android:text="ลองอีกครั้ง"
+            android:textSize="16sp"
+            android:textColor="@color/colortext"
+            android:layout_marginTop="20dp" />
+
+    </LinearLayout>
 
 </LinearLayout>

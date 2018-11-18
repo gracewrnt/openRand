@@ -10,8 +10,8 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageView imageView;
-    Button button;
+    ImageView imageView,imageRand;
+    Button button1, button2;
     Random r;
     int[] images = {R.drawable.bachor, R.drawable.bucket, R.drawable.burin, R.drawable.chick, R.drawable.eight4, R.drawable.eimaim
             , R.drawable.goin, R.drawable.mahalai, R.drawable.mrgrill, R.drawable.shabu2n, R.drawable.pela
@@ -24,14 +24,24 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         imageView = (ImageView) findViewById(R.id.imageRand);
-        button = (Button) findViewById(R.id.butRand);
+        button1 = (Button) findViewById(R.id.butRand1);
         r = new Random();
 
-        button.setOnClickListener(new View.OnClickListener() {
+        button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 pickedImage = r.nextInt(images.length);
                 imageView.setImageResource(images[pickedImage]);
+            }
+        });
+
+
+        imageRand = (ImageView) findViewById(R.id.imageRand);
+        button2 = (Button) findViewById(R.id.butRand2);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                imageRand.setImageResource(R.drawable.rand_img);
             }
         });
 
