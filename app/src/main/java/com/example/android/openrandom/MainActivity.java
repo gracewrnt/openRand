@@ -17,7 +17,6 @@ public class MainActivity extends AppCompatActivity {
             , R.drawable.goin, R.drawable.mahalai, R.drawable.mrgrill, R.drawable.shabu2n, R.drawable.pela
             , R.drawable.steaktechno, R.drawable.thinkmilk, R.drawable.timber};
     int pickedImage = 0;
-    int lastPicked = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,14 +30,12 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                do{
-                    pickedImage = r.nextInt(images.length);
-                } while(pickedImage == lastPicked);
-
-                lastPicked = pickedImage;
+                pickedImage = r.nextInt(images.length);
                 imageView.setImageResource(images[pickedImage]);
             }
         });
+
+
 
     }
 }
