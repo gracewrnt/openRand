@@ -40,7 +40,7 @@
 
         <Button
             android:id="@+id/butRand2"
-            android:layout_width="120dp"
+            android:layout_width="170dp"
             android:layout_height="40dp"
             android:drawableRight="@drawable/redo"
             android:backgroundTint="@color/colorButton"
